@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{margin:0;padding:0;}
+		body{background:#333;font-family:'microsoft yahei';}
+		.yw-contact-map {
+		    height: 640px;
+		    width:519px;
+		    background: url(images/half-sino.png) 0 80% no-repeat;
+		    position: relative;
+		}
+		.yw-local-bj, .yw-local-hz, .yw-local-sh {
+		    position: absolute;
+		    font-size: 18px;
+		    white-space: nowrap;
+		    color:#fff;
+		}
+		.yw-local-bj{
+			top:180px;right:188px
+		}
+		.yw-local-hz{
+			top:391px;right:136px
+		}
+		.yw-local-sh{
+			top:354px;right:60px
+		}
+		.icon-local {
+		    display: inline-block;
+		    width: 14px;
+		    height: 14px;
+		    margin: 0 10px;
+		    box-shadow: 0 0 0 5px hsla(0,0%,100%,.2);
+		    background-color: #019ee3;
+		    border: 4px solid;
+		    border-radius: 50%;
+		    vertical-align: -4px;
+		    animation: localShine 2s linear infinite;
+		}
+		
+		@keyframes localShine{
+			from{
+				box-shadow:0 0 0 0 hsla(0,0%,100%,.2)
+			}
+			to{
+				box-shadow:0 0 0 15px hsla(0,0%,100%,0)
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="yw-contact-map">
+		<span class="yw-local-bj"><i class="icon-local"></i>北京</span>
+		<span class="yw-local-hz"><i class="icon-local"></i>杭州</span>
+		<span class="yw-local-sh"><i class="icon-local"></i>上海</span>
+	</div>
+</body>
+</html>
